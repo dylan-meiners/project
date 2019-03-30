@@ -25,7 +25,11 @@ SECRET_KEY = '(n)w%w5*gp=ck&!n18(bb3*skwb)mmv0d!jw7svq=w)_i!kq)f'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['dylanmeiners-scraper.herokuapp.com']
+ALLOWED_HOSTS = [
+    'dylanmeiners-scraper.herokuapp.com',
+    '127.0.0.1:8000',
+    '127.0.0.1',
+]
 
 
 # Application definition
