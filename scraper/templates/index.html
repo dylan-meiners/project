@@ -8,19 +8,26 @@
     <title>Web Scraper</title>
   </head>
   <body>
-    <header id="header">
-      <div class="header-content">
-        <div class="header-content-inner">
-          <h2 class="header-title">Web Scraper</h2>
-          <ul class="header-list">
-            <li class="header-list-data">Home</li>
-            <li class="header-list-data">Home</li>
-            <li class="header-list-data">Home</li>
-            <li class="header-list-data">Home</li>
-            <li class="header-list-data">Home</li>
-          </ul>
+    <div class="container">
+      <header id="header">
+        <div class="header-content">
+          <div class="header-content-inner">
+            <h2 class="header-title">Web Scraper</h2>
+            <ul class="header-list">
+              <li class="header-list-data"><a href="{% url 'index' %}">Home</a></li>
+              <li class="header-list-data"><a href="{% url 'index' %}">Home</a></li>
+              <li class="header-list-data"><a href="{% url 'index' %}">Home</a></li>
+              <li class="header-list-data"><a href="{% url 'index' %}">Home</a></li>
+              <li class="header-list-data"><a href="{% url 'index' %}">Home</a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="content">
+        <div class="sub-content">
+          <h2 class="content-title">Websites</h2>
+        </div>
       </div>
-      </div>
-    </header>
+    </div>
   </body>
 </html>
