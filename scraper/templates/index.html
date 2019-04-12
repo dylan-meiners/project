@@ -30,18 +30,36 @@
         <div class="sub-content">
           <h2 class="content-title">Websites</h2>
           <button class="add-website-button" type="button">+</button>
+          <div class="add-website-popup">
+            <div class="add-website-popup-content">
+              <span class="close-button-x">X</span>
+              <div class="add-website-popup-website">
+                <h3 class="add-website-popup-website-title">Website Address</h3>
+                <hr />
+                <form class="add-website-popup-website-form">
+                  <input type="text" class="add-website-popup-website-form-input"
+                  name="add-website-popup-website-form-input" placeholder="Name"
+                  onkeypress="return inputKeyPress(event);" />
+                  <input type="submit" class="add-website-popup-website-form-submit"
+                  value="Submit" name="add-website-popup-website-form-submit"></input>
+                </form>
+              </div>
+              <div class="add-website-popup-targets">
+                <h3 class="add-website-popup-targets-title">Website Targets</h3>
+                <hr />
+              </div>
+              <div class="add-website-popup-action">
+                <h3 class="add-website-popup-action-title">Website Action</h3>
+                <hr />
+              </div>
+            </div>
+          </div>
           <div class="websites-list-container">
             <ul class="websites-list">
             </ul>
           </div>
           <div class="sub-content-filler"></div>
         </div>
-      </div>
-    </div>
-    <div class="add-website-popup">
-      <button class="close-button-x">&times;</button>
-      <div class="popup-content">
-        <p>hello</p>
       </div>
     </div>
   </body>
