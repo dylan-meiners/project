@@ -1,0 +1,24 @@
+{
+    "websites": [
+        {
+            "site": "www.google.com",
+            "targets": "target",
+            "action": "action"
+        },
+        {
+            "site": "www.le.com",
+            "targets": "target",
+            "action": "action"
+        },
+        {
+            "site": "ysad.sdf",
+            "targets": "<div class=Hesdf>",
+            "action": "text"
+        },
+        {
+            "site": "ysdfsad.sdf",
+            "targets": "<div class=Hesdf>",
+            "action": "text"
+        }
+    ]
+}
