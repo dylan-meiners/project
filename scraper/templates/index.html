@@ -34,23 +34,35 @@
             <div class="add-website-popup-content">
               <span class="close-button-x">X</span>
               <div class="add-website-popup-website">
-                <h3 class="add-website-popup-website-title">Website Address</h3>
-                <hr />
+                <span class="add-website-popup-step">Step 1: </span>
+                <h2 class="add-website-popup-website-title">Website Address</h2>
+                <hr class="add-website-popup-website-hr" />
                 <form class="add-website-popup-website-form">
                   <input type="text" class="add-website-popup-website-form-input"
-                  name="add-website-popup-website-form-input" placeholder="Name"
-                  onkeypress="return inputKeyPress(event);" />
-                  <input type="submit" class="add-website-popup-website-form-submit"
-                  value="Submit" name="add-website-popup-website-form-submit"></input>
+                  name="add-website-popup-website-form-input" placeholder="Address"
+                  onkeypress="return inputKeyPress(event);" autocomplete="off" spellcheck="false" />
                 </form>
               </div>
               <div class="add-website-popup-targets">
-                <h3 class="add-website-popup-targets-title">Website Targets</h3>
-                <hr />
+                <span class="add-website-popup-step">Step 2: </span>
+                <h2 class="add-website-popup-targets-title">Website Targets</h2>
+                <hr class="add-website-popup-targets-hr"/>
+                <form class="add-website-popup-targets-form">
+                  <ul class="add-website-popup-targets-ul">
+                    <li>
+                      <input type="text" class="add-website-popup-targets-form-input"
+                      name="add-website-popup-targets-form-input" placeholder="Target"
+                      onkeypress="return inputKeyPress(event);" autocomplete="off" spellcheck="false" />
+                      <button class="add-website-popup-targets-remove">X</button>
+                    </li>
+                  </ul>
+              </form>
+                <button class="add-website-popup-targets-add" type="button">Add another!</button>
               </div>
               <div class="add-website-popup-action">
-                <h3 class="add-website-popup-action-title">Website Action</h3>
-                <hr />
+                <span class="add-website-popup-step">Step 3: </span>
+                <h2 class="add-website-popup-action-title">Website Action</h2>
+                <hr class="add-website-popup-action-hr"/>
               </div>
             </div>
           </div>
