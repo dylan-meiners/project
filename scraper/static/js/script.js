@@ -29,10 +29,12 @@ $(document).ready(function(){
     event.preventDefault();
   });
 
-  //==============================================================================
+  //============================================================================
 
   main();
 });
+
+//==============================================================================
 
 function inputKeyPress(e) {
   e = e||window.event;
@@ -42,8 +44,12 @@ function inputKeyPress(e) {
   }
 }
 
+//==============================================================================
+
 function initElements(){
 }
+
+//==============================================================================
 
 function websiteAlreadyExists(data, i){
   var isTrue;
@@ -61,6 +67,8 @@ function websiteAlreadyExists(data, i){
   }
 }
 
+//==============================================================================
+
 function tagsToString(string){
   var openTagsFixed;
   var closedTagsFixed;
@@ -70,6 +78,8 @@ function tagsToString(string){
 
   return closedTagsFixed;
 }
+
+//==============================================================================
 
 function updateJSON(){
   $.getJSON('static/js/data.json', function(data){
@@ -92,6 +102,8 @@ function updateJSON(){
   });
 }
 
+//==============================================================================
+
 function updateAddWebsite(){
 
   $('.add-website-popup-targets-remove').click(function(){
@@ -99,6 +111,8 @@ function updateAddWebsite(){
   });
 
   $('.add-website-popup').css("padding-top", ($(window).height() - $('.add-website-popup-content').outerHeight()) / 2);
+
+  //------------------------------WEBSITE STEP----------------------------------
 
   var websiteStepFormsData = $('.add-website-popup-website-form').serializeArray();
   address = websiteStepFormsData[0].value
@@ -130,7 +144,29 @@ function updateAddWebsite(){
       "border":"1px solid #e81414",
     });
   }
+
+  //------------------------------TARGETS STEP----------------------------------
+
+  var targetsStepFormsData = $('.add-website-popup-targets-form').serializeArray();
+
+  $.each(targetsStepFormsData, function(i, value){
+    target = targetsStepFormsData[i].value;
+
+    if (target != "") {
+      $('.add-website-popup-targets-ul > li').css({
+        "border":"1px solid #19c613"
+      });
+    } else {
+      $(this).css({
+        "border":"1px solid #e81414",
+      });
+    }
+  });
+
 }
+
+
+//==============================================================================
 
 function mainloop(){
   if ($('.add-website-popup').is(':visible')) {
